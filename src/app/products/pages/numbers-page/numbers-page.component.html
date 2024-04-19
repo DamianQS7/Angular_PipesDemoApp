@@ -1,0 +1,22 @@
+<p-panel class="p-2">
+    <h2>Numeric Pipes</h2>
+    <p>These are some of the basic built in pipes in Angular to work with numbers.</p>
+</p-panel>
+
+<div class="grid">
+    <div class="col-12 md:col-4">
+        <p-card header="Population" [subheader]="'of Snow Leopards in Asia'">
+            {{ population | number: '1.2-2' }}
+        </p-card>
+    </div>
+    <div class="col-12 md:col-4">
+        <p-card header="Total Sales" [subheader]="'from last term'">
+            {{ totalSales | currency: 'CAD $': true: '1.2-2' }}
+        </p-card>
+    </div>
+    <div class="col-12 md:col-4">
+        <p-card header="Sensitivy" [subheader]="'of Nasopharyngeal swabs for Covid-19 detection'">
+            {{ percent | percent: '1.2-2' }}
+        </p-card>
+    </div>
+</div>

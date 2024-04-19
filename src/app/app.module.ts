@@ -6,6 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
 
+// Locale configuration
+import localeEsCl from '@angular/common/locales/es-CL';
+import localeFrCa from '@angular/common/locales/fr-CA';
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localeEsCl);
+registerLocaleData(localeFrCa);
+
 @NgModule({
   declarations: [
     AppComponent
